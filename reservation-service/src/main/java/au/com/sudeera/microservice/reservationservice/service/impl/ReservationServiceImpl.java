@@ -33,4 +33,9 @@ public class ReservationServiceImpl implements ReservationService {
 		return reservationRepository.getByName(name);
 	}
 
+	@Override
+	public Reservation getReservationById(Long id) {
+		return reservationRepository.findOne(id);
+	}
+
 }
